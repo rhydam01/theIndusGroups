@@ -1,0 +1,119 @@
+.about-container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #D9EBFF;
+  margin-top: 60px;
+  flex-direction: row; /* Default layout for large screens */
+}
+#root{
+  background-color: white;
+}
+.text-container {
+  flex: 1;
+  padding-right: 40px;
+  padding-left: 60px;
+  color: black;
+  margin-top: -60px;
+}
+
+.text-container h1 {
+  font-size: 48px;
+}
+
+.image-container {
+  width: 550px;
+  height: auto;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.text-container p {
+  margin-right: 100px;
+}
+
+/* Responsive Design for Small Screens */
+@media only screen and (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Stack image on top of text */
+    align-items: center; /* Center align content */
+    padding: 20px; /* Adjust padding */
+  }
+  
+  .text-container {
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 0; /* Reset margin-top */
+    text-align: center; /* Center align text */
+    margin-bottom: 20px; /* Add margin-bottom to separate text from image */
+  }
+  
+  .image-container {
+    max-width: 60%; /* Make image container full width */
+    margin-top: 20px; /* Adjust margin-top */
+  }
+  
+  .text-container p {
+    margin-right: 0; /* Reset margin-right */
+  }
+}
+
+
+.main-img{
+
+  
+  width: 100vw;
+}
+.title{
+  color: #464141;
+  font-size: 48px;
+  margin-right: 25vw;
+  text-align: right;
+  margin-top: -18vh;
+}
+
+.row1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+align-items: center ;
+height: 55vh;
+width: 100vw;
+
+}
+
+.who{margin-left: 65px;
+  width: 40vw;
+}
+.whoHead{
+  font-weight: 600;
+  color: #F94444;
+  font-size: 48px;
+}
+.whoImage{
+  margin-right: 65px;
+height: 55vh;
+}
+
+.whoBody{
+  font-size: 24px;
+  text-align: justify;
+}
+
+.vision{
+  margin-left: 65px;
+}
+
+.visionText{
+  font-weight: 600;
+  color: #F94444;
+  font-size: 48px;
+}
+
+.visionColumn{
+  width: 40vw;
+  margin-right: 10vw;
+}

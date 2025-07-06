@@ -1,0 +1,27 @@
+.Heading{
+    font-size: 40px;
+    color: #F94444;
+    text-align: left;
+    margin-left: 40px;
+    font-weight: 600;
+}
+
+.card-holder{
+    display: flex;
+    flex-direction: row;
+}
+.container{
+
+    border: solid #000;
+    border-width:  1px;
+    margin: 40px;
+    padding: 10px;
+    height: 550px;
+    width: 400px;
+  }
+  
+  .containerTitle{
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+  }

@@ -1,0 +1,75 @@
+
+.main-img{
+
+    height: 562px;
+    width: 100vw;
+  }
+  .title{
+    color: #464141;
+    font-size: 48px;
+    margin-right: 25vw;
+    text-align: right;
+    margin-top: -18vh;
+  }
+  
+  .row1{
+    margin-top: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  align-items: center ;
+  height: 55vh;
+  width: 100vw;
+  
+  }
+
+  .row2{
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  align-items: center ;
+  height: 55vh;
+  width: 100vw;
+  }
+  
+  .who{margin-left: 65px;
+    width: 40vw;
+  }
+  .whoHead{
+    font-weight: 600;
+    color: #F94444;
+    font-size: 48px;
+  }
+  .whoImage{
+    justify-self: center;
+    align-self: center;
+    margin-right: 65px;
+  height: 55vh;
+  }
+  
+  .whoBody{
+        text-align: justify;
+    font-size: 24px;
+  }
+  
+  .vision{
+    margin-left: 65px;
+  }
+  
+  .visionText{
+    font-weight: 600;
+    color: #F94444;
+    font-size: 48px;
+  }
+  
+  .visionColumn{
+    width: 40vw;
+    margin-right: 10vw;
+  }
+
+  .keen{
+    color:  #487AF9;
+    font-weight: 600;
+    font-size: 96px;
+  }
