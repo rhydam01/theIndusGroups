@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './navbar.css';
 import logo from './indus-logo(dark).png';
-import eyr from './elevenyrs.jpg';
-import iso from './isologo.png'
-import { IoCall } from 'react-icons/io5'; 
+import eyr from './goldiso.png';
+import iso from './indusyouth.png'
+// import { IoCall } from 'react-icons/io5'; 
 import { FaChevronDown } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
@@ -75,9 +75,9 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="navbar-right">
-          {/* <img src={eyr} alt="Eyr" className="eyr-logo" /> */}
-          <a href="tel:+917011332238" className='num-head'><IoCall/>+91 701-133-2238</a>
-          {/* <img src={iso} alt="ISO" className="iso-logo" /> */}
+          <img src={eyr} alt="Eyr" className="eyr-logo" />
+          {/* <a href="tel:+917011332238" className='num-head'><IoCall/>+91 701-133-2238</a> */}
+          <img src={iso} alt="ISO" className="iso-logo" />
         </div>
     </nav>
   );
