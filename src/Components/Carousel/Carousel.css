@@ -628,13 +628,13 @@
 }
 @media (max-width : 674px) {
   .carousel {
-    width: 148vw;
+    width: auto;
     height: 100vh;
     overflow: hidden;
     position: relative;
   }
   .carousel-item {
-    min-width: 148vw;
+    min-width: auto;
     height: 107vh;
     position: absolute;
     opacity: 0;

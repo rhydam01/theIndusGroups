@@ -1,21 +1,21 @@
 body {
     font-family: Arial, sans-serif;
     overflow-x: hidden;
-    
+
 }
 
-#logo{
+#logo {
     width: 150px;
     height: auto;
 }
 
-.footer{
+.footer {
     margin-top: 100px;
     background-color: #333;
     background-image: url(./bgimg.png);
 }
 
-.footer img{
+.footer img {
     margin-top: 20px;
 }
 
@@ -55,19 +55,28 @@ body {
 }
 
 .staff-login-button {
-    background-color: #007bff; /* Blue background */
-    color: white; /* White text */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    padding: 10px 20px; /* Padding */
-    font-size: 16px; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s; /* Smooth background color transition */
-  }
-  
-  .staff-login-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-  }
+    background-color: #007bff;
+    /* Blue background */
+    color: white;
+    /* White text */
+    border: none;
+    /* Remove border */
+    border-radius: 5px;
+    /* Rounded corners */
+    padding: 10px 20px;
+    /* Padding */
+    font-size: 16px;
+    /* Font size */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s;
+    /* Smooth background color transition */
+}
+
+.staff-login-button:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}
 
 .footer-section h2,
 .footer-section h3 {
@@ -135,18 +144,33 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .footer-flex {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        padding: 20px 0;
+    }
+
     .container {
         flex-direction: column;
         align-items: center;
+        width: auto;
     }
 
     .footer-section {
         text-align: center;
         padding: 20px 10px;
         margin-bottom: 20px;
+        width: auto;
     }
 
     .social-media {
         justify-content: center;
+        width: auto;
     }
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
 }

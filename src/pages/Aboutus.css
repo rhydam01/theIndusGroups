@@ -47,7 +47,7 @@
     .about-container {
       flex-direction: column; /* Stack image on top of text */
       align-items: center; /* Center align content */
-      padding: 20px; /* Adjust padding */
+      /* padding: 20px; Adjust padding */
     }
     
     .text-container {
@@ -55,7 +55,7 @@
       padding-left: 0;
       margin-top: 0; /* Reset margin-top */
       text-align: center; /* Center align text */
-      margin-bottom: 20px; /* Add margin-bottom to separate text from image */
+      /* margin-bottom: 20px; Add margin-bottom to separate text from image */
     }
     
     .image-container {

@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
-import './QueryForm.css'; // Import the CSS file for styling
+import React, { useState } from "react";
+import "./QueryForm.css";
+import emailjs from "@emailjs/browser";
 
 const QueryForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    location: '',
-    mobile: '',
-    email: '',
-    message: '',
+    name: "",
+    location: "",
+    mobile: "",
+    email: "",
+    message: "",
   });
-  const [status, setStatus] = useState('');
+  const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,10 +19,27 @@ const QueryForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // For demonstration, just show a success message
-    // Integrate with your email service or backend here
-    setStatus('Success! Your message has been sent.');
-    setFormData({ name: '', location: '', mobile: '', email: '', message: '' }); // Clear form
+
+    const serviceID = "service_lzytpsg";
+    const templateID = "template_xde1wfh";
+    const publicKey = "574Dvb0Em4Nxqt8kR";
+
+    emailjs
+      .send(serviceID, templateID, formData, publicKey)
+      .then(() => {
+        setStatus("Success! Your message has been sent.");
+        setFormData({
+          name: "",
+          location: "",
+          mobile: "",
+          email: "",
+          message: "",
+        });
+      })
+      .catch((error) => {
+        console.error("EmailJS Error:", error);
+        setStatus("Failed to send message. Please try again later.");
+      });
   };
 
   return (
@@ -32,7 +50,6 @@ const QueryForm = () => {
           <label htmlFor="name">Name:</label>
           <input
             type="text"
-            id="name"
             name="name"
             value={formData.name}
             onChange={handleChange}
@@ -43,7 +60,6 @@ const QueryForm = () => {
           <label htmlFor="location">Location:</label>
           <input
             type="text"
-            id="location"
             name="location"
             value={formData.location}
             onChange={handleChange}
@@ -54,7 +70,6 @@ const QueryForm = () => {
           <label htmlFor="mobile">Mobile No.:</label>
           <input
             type="text"
-            id="mobile"
             name="mobile"
             value={formData.mobile}
             onChange={handleChange}
@@ -65,7 +80,6 @@ const QueryForm = () => {
           <label htmlFor="email">Email:</label>
           <input
             type="email"
-            id="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
@@ -75,14 +89,15 @@ const QueryForm = () => {
         <div className="form-group">
           <label htmlFor="message">Message:</label>
           <textarea
-            id="message"
             name="message"
             value={formData.message}
             onChange={handleChange}
             required
           />
         </div>
-        <button className='submit' type="submit">Send Query</button>
+        <button className="submit" type="submit">
+          Send Query
+        </button>
       </form>
       {status && <p className="status-message">{status}</p>}
     </div>
